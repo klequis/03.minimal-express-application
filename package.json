@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development NODE_PATH=./ nodemon --exec babel-node server/index.js"
+    "start": "NODE_ENV=development NODE_PATH=./ nodemon --exec babel-node server/index.js",
+    "build": "babel . -d dist --ignore node_modules --source-maps"
   },
   "keywords": [],
   "author": "",
